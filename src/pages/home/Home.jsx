@@ -11,7 +11,7 @@ export default function Home () {
       <Heading
         borderBottom={'1px solid #ccc'}
         color={colorMode === 'light' ? 'gray.700' : 'white'} mt={4} fontSize={26}>
-        Desejo as boas vindas ao React Setup
+        Desejo as boas vindas ao React
       </Heading>
       <Image src={reactImg} />
       <Box
