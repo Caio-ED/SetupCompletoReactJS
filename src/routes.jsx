@@ -1,6 +1,7 @@
 import React from 'react'
 import { useRoutes } from 'react-router-dom'
 import Home from './pages/home/Home'
+import Desafio from './pages/desafio/Desafio'
 import Admin from './layout/Admin'
 import NaoAutorizado401 from './pages/naoAutorizado401/NaoAutorizado401'
 import NaoLocalizado404 from './pages/naoLocalizado404/NaoLocalizado404'
@@ -17,6 +18,10 @@ export default function Routes () {
         {
           path: 'home',
           element: verificarChave('KOA') ? <Home /> : <NaoAutorizado401 />
+        },
+        {
+          path: 'desafio',
+          element: <Desafio />
         }
       ]
     },
